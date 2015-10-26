@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'SEE' do
+pod 'EstimoteSDK', '~> 3.7'
+end
+
+target 'SEETests' do
+
+end
+
+target 'SEEUITests' do
+
+end
+
