@@ -9,12 +9,19 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
+    let beaconManager = ESTBeaconManager()
+    let beaconRegion = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "b9407f30-f5f8-466e-aff9-25556b57fe6d")!, identifier: "region")
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 3. Set the beacon manager's delegate
+        self.beaconManager.delegate = self
+        // 4. We need to request this authorization for every beacon manager
+        self.beaconManager.requestAlwaysAuthorization()
         return true
     }
 
@@ -26,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        self.beaconManager.stopRangingBeaconsInRegion(self.beaconRegion)
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -34,12 +42,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        self.beaconManager.startRangingBeaconsInRegion(self.beaconRegion)
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func beaconManager(manager: AnyObject, didStartMonitoringForRegion region: CLBeaconRegion) {
+    }
+    
+    func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
+        NSLog("asdf")
+    }
+    
+    func beaconManager(manager: AnyObject, monitoringDidFailForRegion region: CLBeaconRegion?, withError error: NSError) {
+        
+    }
+    
 }
 
