@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     }
     
     func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
-        NSLog("asdf")
+        NSNotificationCenter.defaultCenter().postNotificationName(kDidRangeBeacon, object: beacons)
     }
     
     func beaconManager(manager: AnyObject, monitoringDidFailForRegion region: CLBeaconRegion?, withError error: NSError) {

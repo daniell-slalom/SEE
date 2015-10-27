@@ -8,3 +8,4 @@
 
 #import <EstimoteSDK/EstimoteSDK.h>
 #import "JSONModel.h"
+#import "Common.h"

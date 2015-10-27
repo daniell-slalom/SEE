@@ -7,9 +7,7 @@
 //
 
 class UserLocation: JSONModel {
-    var username: NSString? = nil
-    var regionId: NSUUID? = nil
-    var major: CLBeaconMajorValue? = nil
-    var minor: CLBeaconMinorValue? = nil
-    var beaconName: NSString? = nil
+    var username: NSString = ""
+    var location: NSString = ""
+    var timeStamp: NSDate = NSDate()
 }

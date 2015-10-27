@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		01EF1D404608DA6DE966BD9E /* libPods-SEE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE813C1F35610594AB4E1FB /* libPods-SEE.a */; };
 		A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2B71BDD8BE100CEF40F /* AppDelegate.swift */; };
-		A70FB2BA1BDD8BE100CEF40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2B91BDD8BE100CEF40F /* ViewController.swift */; };
 		A70FB2BD1BDD8BE100CEF40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70FB2BB1BDD8BE100CEF40F /* Main.storyboard */; };
 		A70FB2BF1BDD8BE100CEF40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70FB2BE1BDD8BE100CEF40F /* Assets.xcassets */; };
 		A70FB2C21BDD8BE100CEF40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70FB2C01BDD8BE100CEF40F /* LaunchScreen.storyboard */; };
 		A70FB2CD1BDD8BE200CEF40F /* SEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2CC1BDD8BE200CEF40F /* SEETests.swift */; };
 		A70FB2D81BDD8BE200CEF40F /* SEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2D71BDD8BE200CEF40F /* SEEUITests.swift */; };
+		A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */; };
+		A7643A2B1BE004590058EC6B /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2A1BE004590058EC6B /* MockService.swift */; };
+		A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2C1BE006E10058EC6B /* ContactViewController.swift */; };
 		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -42,7 +44,6 @@
 		86E38CAC4408FC0397CED891 /* Pods-SEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-SEE/Pods-SEE.release.xcconfig"; sourceTree = "<group>"; };
 		A70FB2B41BDD8BE100CEF40F /* SEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70FB2B71BDD8BE100CEF40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A70FB2B91BDD8BE100CEF40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A70FB2BC1BDD8BE100CEF40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A70FB2BE1BDD8BE100CEF40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70FB2C11BDD8BE100CEF40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +54,10 @@
 		A70FB2D31BDD8BE200CEF40F /* SEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70FB2D71BDD8BE200CEF40F /* SEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEUITests.swift; sourceTree = "<group>"; };
 		A70FB2D91BDD8BE200CEF40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTrackingServiceProtocal.swift; sourceTree = "<group>"; };
+		A7643A2A1BE004590058EC6B /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		A7643A2C1BE006E10058EC6B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		A7643A2F1BE007900058EC6B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SEE-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A7C3DE931BDDE93B0073B669 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -119,15 +124,16 @@
 		A70FB2B61BDD8BE100CEF40F /* SEE */ = {
 			isa = PBXGroup;
 			children = (
+				A7643A2E1BE006EA0058EC6B /* ViewControllers */,
 				A7BB86DA1BDE8AB40006B421 /* Models */,
 				A7C3DE951BDE89140073B669 /* Services */,
 				A70FB2B71BDD8BE100CEF40F /* AppDelegate.swift */,
-				A70FB2B91BDD8BE100CEF40F /* ViewController.swift */,
 				A70FB2BB1BDD8BE100CEF40F /* Main.storyboard */,
 				A70FB2BE1BDD8BE100CEF40F /* Assets.xcassets */,
 				A70FB2C01BDD8BE100CEF40F /* LaunchScreen.storyboard */,
 				A70FB2C31BDD8BE100CEF40F /* Info.plist */,
 				A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */,
+				A7643A2F1BE007900058EC6B /* Common.h */,
 			);
 			path = SEE;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 			path = SEEUITests;
 			sourceTree = "<group>";
 		};
+		A7643A2E1BE006EA0058EC6B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7643A2C1BE006E10058EC6B /* ContactViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A7BB86DA1BDE8AB40006B421 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +175,8 @@
 		A7C3DE951BDE89140073B669 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */,
+				A7643A2A1BE004590058EC6B /* MockService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -352,8 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
-				A70FB2BA1BDD8BE100CEF40F /* ViewController.swift in Sources */,
+				A7643A2B1BE004590058EC6B /* MockService.swift in Sources */,
+				A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */,
 				A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */,
+				A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
