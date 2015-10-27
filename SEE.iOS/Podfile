@@ -3,6 +3,8 @@
 
 target 'SEE' do
 pod 'EstimoteSDK', '~> 3.7'
+pod 'JSONModel'
+pod 'SVProgressHUD'
 end
 
 target 'SEETests' do

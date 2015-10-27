@@ -15,6 +15,7 @@
 		A70FB2C21BDD8BE100CEF40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70FB2C01BDD8BE100CEF40F /* LaunchScreen.storyboard */; };
 		A70FB2CD1BDD8BE200CEF40F /* SEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2CC1BDD8BE200CEF40F /* SEETests.swift */; };
 		A70FB2D81BDD8BE200CEF40F /* SEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70FB2D71BDD8BE200CEF40F /* SEEUITests.swift */; };
+		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		A70FB2D71BDD8BE200CEF40F /* SEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEUITests.swift; sourceTree = "<group>"; };
 		A70FB2D91BDD8BE200CEF40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SEE-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A7C3DE931BDDE93B0073B669 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,8 @@
 		A70FB2B61BDD8BE100CEF40F /* SEE */ = {
 			isa = PBXGroup;
 			children = (
+				A7BB86DA1BDE8AB40006B421 /* Models */,
+				A7C3DE951BDE89140073B669 /* Services */,
 				A70FB2B71BDD8BE100CEF40F /* AppDelegate.swift */,
 				A70FB2B91BDD8BE100CEF40F /* ViewController.swift */,
 				A70FB2BB1BDD8BE100CEF40F /* Main.storyboard */,
@@ -144,6 +148,21 @@
 				A70FB2D91BDD8BE200CEF40F /* Info.plist */,
 			);
 			path = SEEUITests;
+			sourceTree = "<group>";
+		};
+		A7BB86DA1BDE8AB40006B421 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A7C3DE951BDE89140073B669 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		C4AC82E176051E9ABB2C1DC6 /* Pods */ = {
@@ -332,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
 				A70FB2BA1BDD8BE100CEF40F /* ViewController.swift in Sources */,
 				A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */,
 			);
