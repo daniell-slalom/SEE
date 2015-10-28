@@ -54,6 +54,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     
     func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
         NSNotificationCenter.defaultCenter().postNotificationName(kDidRangeBeacon, object: beacons)
+        
+        
+        
+        if(beacons.count > 0){
+            debugPrint("Found beacons:")
+            for beacon in beacons{
+                let myMinor = beacon.minor
+                let myMajor = beacon.major
+                let formatedString = String(myMajor) + ":" + String(myMinor)
+                
+                debugPrint(formatedString)
+            }
+        }else{
+            debugPrint("Searching...")
+        }
     }
     
     func beaconManager(manager: AnyObject, monitoringDidFailForRegion region: CLBeaconRegion?, withError error: NSError) {
