@@ -17,6 +17,7 @@
 		A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */; };
 		A7643A2B1BE004590058EC6B /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2A1BE004590058EC6B /* MockService.swift */; };
 		A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2C1BE006E10058EC6B /* ContactViewController.swift */; };
+		A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B368741BE0549D0037BC75 /* SessionManager.swift */; };
 		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		A7643A2C1BE006E10058EC6B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A7643A2F1BE007900058EC6B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SEE-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7B368741BE0549D0037BC75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A7C3DE931BDDE93B0073B669 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 		A70FB2B61BDD8BE100CEF40F /* SEE */ = {
 			isa = PBXGroup;
 			children = (
+				A7B368761BE054A30037BC75 /* Managers */,
 				A7643A2E1BE006EA0058EC6B /* ViewControllers */,
 				A7BB86DA1BDE8AB40006B421 /* Models */,
 				A7C3DE951BDE89140073B669 /* Services */,
@@ -162,6 +165,14 @@
 				A7643A2C1BE006E10058EC6B /* ContactViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7B368761BE054A30037BC75 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A7B368741BE0549D0037BC75 /* SessionManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		A7BB86DA1BDE8AB40006B421 /* Models */ = {
@@ -369,6 +380,7 @@
 			files = (
 				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
 				A7643A2B1BE004590058EC6B /* MockService.swift in Sources */,
+				A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */,
 				A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */,
 				A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */,
 				A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */,

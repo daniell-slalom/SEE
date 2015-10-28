@@ -8,6 +8,34 @@
 
 import UIKit
 
-class ContactViewController: UIViewController {
+class ContactViewController: UIViewController,UITextFieldDelegate{
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var GreetingLabelView: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+
+
+        let tap = UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard"))
+        self.view.addGestureRecognizer(tap)
+        
+        self.usernameTextField.delegate = self;
+    }
+    
+    func dismissKeyboard(){
+        usernameTextField.resignFirstResponder()
+    }
+    
+    @IBAction func usernameTextFieldTextDidChange(sender: AnyObject) {
+        SessionManager.instance.username = usernameTextField!.text
+        
+        self.GreetingLabelView!.text = "Hello " + SessionManager.instance.username! + "!"
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        dismissKeyboard()
+        return false;
+    }
 }
