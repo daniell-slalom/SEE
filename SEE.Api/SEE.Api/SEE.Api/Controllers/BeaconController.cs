@@ -19,7 +19,7 @@ namespace SEE.Api.Controllers
         }
 
         // PUT: api/Beacon/5
-        public void Put([FromBody]UserLocation userLocation)
+        public void Post([FromBody]UserLocation userLocation)
         {
             UserLocationsManager.Instance.Log(userLocation);
         }
