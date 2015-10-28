@@ -8,6 +8,6 @@
 
 
 protocol BeaconTrackingServiceProtocal: NSObjectProtocol {
-    func logUserLocation(username: NSString ,  location: NSString,  timeStamp: NSDate);
+    func logUserLocation(username: String ,  location: String,  timeStamp: String);
     func getUserLocations()->[UserLocation];
 }

@@ -17,6 +17,8 @@
 		A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */; };
 		A7643A2B1BE004590058EC6B /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2A1BE004590058EC6B /* MockService.swift */; };
 		A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2C1BE006E10058EC6B /* ContactViewController.swift */; };
+		A7727C5E1BE05FED00B839E3 /* UserlocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */; };
+		A7727C611BE082BF00B839E3 /* UserlocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7727C601BE082BF00B839E3 /* UserlocationTableViewCell.swift */; };
 		A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B368741BE0549D0037BC75 /* SessionManager.swift */; };
 		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
@@ -59,6 +61,8 @@
 		A7643A2A1BE004590058EC6B /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		A7643A2C1BE006E10058EC6B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A7643A2F1BE007900058EC6B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserlocationViewController.swift; sourceTree = "<group>"; };
+		A7727C601BE082BF00B839E3 /* UserlocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserlocationTableViewCell.swift; sourceTree = "<group>"; };
 		A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SEE-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7B368741BE0549D0037BC75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		A70FB2B61BDD8BE100CEF40F /* SEE */ = {
 			isa = PBXGroup;
 			children = (
+				A7727C621BE08DA500B839E3 /* Utilities */,
+				A7727C5F1BE0822200B839E3 /* Views */,
 				A7B368761BE054A30037BC75 /* Managers */,
 				A7643A2E1BE006EA0058EC6B /* ViewControllers */,
 				A7BB86DA1BDE8AB40006B421 /* Models */,
@@ -163,8 +169,24 @@
 			isa = PBXGroup;
 			children = (
 				A7643A2C1BE006E10058EC6B /* ContactViewController.swift */,
+				A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7727C5F1BE0822200B839E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7727C601BE082BF00B839E3 /* UserlocationTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A7727C621BE08DA500B839E3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		A7B368761BE054A30037BC75 /* Managers */ = {
@@ -378,10 +400,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7727C5E1BE05FED00B839E3 /* UserlocationViewController.swift in Sources */,
 				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
 				A7643A2B1BE004590058EC6B /* MockService.swift in Sources */,
 				A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */,
 				A7643A291BE003370058EC6B /* BeaconTrackingServiceProtocal.swift in Sources */,
+				A7727C611BE082BF00B839E3 /* UserlocationTableViewCell.swift in Sources */,
 				A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */,
 				A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 class UserLocation: JSONModel {
-    var username: NSString = ""
-    var location: NSString = ""
-    var timeStamp: NSDate = NSDate()
+    var username: String = ""
+    var location: String = ""
+    var timeStamp: String = ""
 }

@@ -55,14 +55,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
     func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
         NSNotificationCenter.defaultCenter().postNotificationName(kDidRangeBeacon, object: beacons)
         
-        
-        
         if(beacons.count > 0){
             debugPrint("Found beacons:")
             for beacon in beacons{
                 let myMinor = beacon.minor
                 let myMajor = beacon.major
                 let formatedString = String(myMajor) + ":" + String(myMinor)
+               
+                if let username = SessionManager.instance.username {
+                 
+                    let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
+                    
+                    SessionManager.instance.service.logUserLocation(username, location: formatedString, timeStamp: timestamp)
+                }
+                
                 
                 debugPrint(formatedString)
             }

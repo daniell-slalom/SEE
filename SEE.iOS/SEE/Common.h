@@ -10,5 +10,6 @@
 #define Common_h
 
 #define kDidRangeBeacon @"Did Range Beacon"
+#define kUserlocationTableViewCellReuseId @"userlocationTableViewCell"
 
 #endif /* Common_h */
