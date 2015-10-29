@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-sk-OZ4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-sk-OZ4">
                                 <rect key="frame" x="-3" y="52" width="606" height="499"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,22 +48,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="606" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMH-ZH-ZfQ">
-                                                    <rect key="frame" x="253" y="11" width="162" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-sl-Hw4">
+                                                    <rect key="frame" x="303" y="11" width="112" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-sl-Hw4">
-                                                    <rect key="frame" x="465" y="11" width="112" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-UT-qGd">
+                                                    <rect key="frame" x="15" y="-5" width="110" height="21"/>
                                                     <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="110" id="SNp-AI-3lO"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-UT-qGd">
-                                                    <rect key="frame" x="41" y="11" width="154" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMH-ZH-ZfQ">
+                                                    <rect key="frame" x="15" y="22" width="162" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,24 +74,6 @@
                                                 </label>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstItem="FZa-sl-Hw4" firstAttribute="leading" secondItem="wMH-ZH-ZfQ" secondAttribute="leading" id="NEG-em-iym"/>
-                                                <constraint firstItem="wMH-ZH-ZfQ" firstAttribute="leading" secondItem="9Vu-UT-qGd" secondAttribute="leading" id="caS-qw-WNh"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="FZa-sl-Hw4" secondAttribute="trailing" constant="21" id="cxR-W1-Uub"/>
-                                                <constraint firstItem="wMH-ZH-ZfQ" firstAttribute="leading" secondItem="9Vu-UT-qGd" secondAttribute="trailing" constant="58" id="dTJ-jB-xlo"/>
-                                                <constraint firstItem="9Vu-UT-qGd" firstAttribute="leading" secondItem="41S-lF-Hhs" secondAttribute="leadingMargin" constant="33" id="l4J-Y0-Vbd"/>
-                                                <constraint firstItem="9Vu-UT-qGd" firstAttribute="centerY" secondItem="41S-lF-Hhs" secondAttribute="centerY" id="oue-96-8PO"/>
-                                                <constraint firstItem="wMH-ZH-ZfQ" firstAttribute="centerY" secondItem="41S-lF-Hhs" secondAttribute="centerY" id="paF-Ej-GXT"/>
-                                                <constraint firstItem="FZa-sl-Hw4" firstAttribute="centerY" secondItem="41S-lF-Hhs" secondAttribute="centerY" id="sy7-5v-1Fo"/>
-                                                <constraint firstItem="9Vu-UT-qGd" firstAttribute="centerX" secondItem="41S-lF-Hhs" secondAttribute="centerX" id="yTm-Uw-qd9"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="yTm-Uw-qd9"/>
-                                                    <exclude reference="caS-qw-WNh"/>
-                                                    <exclude reference="NEG-em-iym"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
@@ -102,6 +87,12 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U0f-DX-l26" firstAttribute="top" secondItem="JDO-sk-OZ4" secondAttribute="bottom" id="FTf-qH-hJz"/>
+                            <constraint firstItem="JDO-sk-OZ4" firstAttribute="top" secondItem="7i2-pX-G6A" secondAttribute="bottom" constant="32" id="Y6e-Nr-zaz"/>
+                            <constraint firstItem="JDO-sk-OZ4" firstAttribute="leading" secondItem="gxV-ki-alU" secondAttribute="leadingMargin" constant="-23" id="h7x-p4-9Ut"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JDO-sk-OZ4" secondAttribute="trailing" constant="-23" id="zcw-Wx-Hdh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="8Vg-BI-TUl"/>
                     <connections>

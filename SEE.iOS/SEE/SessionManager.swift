@@ -10,5 +10,5 @@
 class SessionManager: NSObject {
     static let instance: SessionManager = SessionManager()
     var username: String? = nil
-    var service: BeaconTrackingServiceProtocal = MockService()
+    var service: BeaconTrackingServiceProtocal = AzureService()
 }

@@ -22,6 +22,8 @@
 		A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B368741BE0549D0037BC75 /* SessionManager.swift */; };
 		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
+		A7EA4F5F1BE1CCCE000D8720 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EA4F5E1BE1CCCE000D8720 /* WindowsAzureMobileServices.framework */; };
+		A7EA4F611BE1D39E000D8720 /* AzureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA4F601BE1D39E000D8720 /* AzureService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		A7B368741BE0549D0037BC75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A7C3DE931BDDE93B0073B669 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A7EA4F5E1BE1CCCE000D8720 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		A7EA4F601BE1D39E000D8720 /* AzureService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EA4F5F1BE1CCCE000D8720 /* WindowsAzureMobileServices.framework in Frameworks */,
 				A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */,
 				01EF1D404608DA6DE966BD9E /* libPods-SEE.a in Frameworks */,
 			);
@@ -99,6 +104,7 @@
 		08D62CD692A968A7326CCAF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7EA4F5E1BE1CCCE000D8720 /* WindowsAzureMobileServices.framework */,
 				A7C3DE931BDDE93B0073B669 /* MapKit.framework */,
 				6CE813C1F35610594AB4E1FB /* libPods-SEE.a */,
 			);
@@ -210,6 +216,7 @@
 			children = (
 				A7643A281BE003370058EC6B /* BeaconTrackingServiceProtocal.swift */,
 				A7643A2A1BE004590058EC6B /* MockService.swift */,
+				A7EA4F601BE1D39E000D8720 /* AzureService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -401,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7727C5E1BE05FED00B839E3 /* UserlocationViewController.swift in Sources */,
+				A7EA4F611BE1D39E000D8720 /* AzureService.swift in Sources */,
 				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
 				A7643A2B1BE004590058EC6B /* MockService.swift in Sources */,
 				A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */,
@@ -552,6 +560,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SEE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slalom.SEE;
@@ -568,6 +580,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SEE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slalom.SEE;

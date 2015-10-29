@@ -7,5 +7,6 @@
 //
 
 #import <EstimoteSDK/EstimoteSDK.h>
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import "JSONModel.h"
 #import "Common.h"
