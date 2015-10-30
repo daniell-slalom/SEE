@@ -31,7 +31,11 @@ class UserlocationViewController: BaseViewController,UITableViewDataSource, UITa
     }
     
     func reloadTable(){
-        self.userlocationTableView.reloadData()
+        
+        let range = NSMakeRange(0, self.userlocationTableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.userlocationTableView.reloadSections(sections, withRowAnimation: .Automatic)
+//        self.userlocationTableView.reloadData()
     }
     
     
