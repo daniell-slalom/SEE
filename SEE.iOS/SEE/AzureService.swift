@@ -17,12 +17,17 @@ class AzureService: NSObject, BeaconTrackingServiceProtocal{
 
     
     func logUserLocation(username: String ,  location: String,  timeStamp: String){
-        let userlocation = UserLocation()
-        userlocation.username = username
-        userlocation.location = location
-        userlocation.timeStamp = timeStamp
-        let json = userlocation.toDictionary()
-        postUserlocation(json)
+        
+        if(SessionManager.instance.shouldTrack){
+            let userlocation = UserLocation()
+            userlocation.username = username
+            userlocation.location = location
+            userlocation.timeStamp = timeStamp
+            let json = userlocation.toDictionary()
+            postUserlocation(json)
+        }else{
+            debugPrint("tracking is disabled")
+        }
     }
     
 //    func logUserLocation(username: String ,  location: String,  timeStamp: String);

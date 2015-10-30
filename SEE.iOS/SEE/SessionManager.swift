@@ -12,4 +12,5 @@ class SessionManager: NSObject {
     var username: String? = nil
     var service: BeaconTrackingServiceProtocal = AzureService()
     var foundBeacon: Bool = false
+    var shouldTrack: Bool = false
 }
