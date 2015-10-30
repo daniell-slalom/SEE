@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactViewController: UIViewController,UITextFieldDelegate{
+class ContactViewController: BaseViewController,UITextFieldDelegate{
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var GreetingLabelView: UILabel!
@@ -22,6 +22,10 @@ class ContactViewController: UIViewController,UITextFieldDelegate{
         self.view.addGestureRecognizer(tap)
         
         self.usernameTextField.delegate = self;
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     func dismissKeyboard(){

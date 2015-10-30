@@ -19,6 +19,8 @@
 		A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7643A2C1BE006E10058EC6B /* ContactViewController.swift */; };
 		A7727C5E1BE05FED00B839E3 /* UserlocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */; };
 		A7727C611BE082BF00B839E3 /* UserlocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7727C601BE082BF00B839E3 /* UserlocationTableViewCell.swift */; };
+		A781F8991BE33AD700D6EA3B /* SEENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781F8981BE33AD700D6EA3B /* SEENavigationController.swift */; };
+		A781F89B1BE33E1600D6EA3B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781F89A1BE33E1600D6EA3B /* BaseViewController.swift */; };
 		A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B368741BE0549D0037BC75 /* SessionManager.swift */; };
 		A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */; };
 		A7C3DE941BDDE93C0073B669 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3DE931BDDE93B0073B669 /* MapKit.framework */; };
@@ -65,6 +67,8 @@
 		A7643A2F1BE007900058EC6B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserlocationViewController.swift; sourceTree = "<group>"; };
 		A7727C601BE082BF00B839E3 /* UserlocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserlocationTableViewCell.swift; sourceTree = "<group>"; };
+		A781F8981BE33AD700D6EA3B /* SEENavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEENavigationController.swift; sourceTree = "<group>"; };
+		A781F89A1BE33E1600D6EA3B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A7872A2D1BDD8F17008D3E42 /* SEE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SEE-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7B368741BE0549D0037BC75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A7BB86DB1BDE8BDA0006B421 /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 			children = (
 				A7643A2C1BE006E10058EC6B /* ContactViewController.swift */,
 				A7727C5D1BE05FED00B839E3 /* UserlocationViewController.swift */,
+				A781F8981BE33AD700D6EA3B /* SEENavigationController.swift */,
+				A781F89A1BE33E1600D6EA3B /* BaseViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 			files = (
 				A7727C5E1BE05FED00B839E3 /* UserlocationViewController.swift in Sources */,
 				A7EA4F611BE1D39E000D8720 /* AzureService.swift in Sources */,
+				A781F89B1BE33E1600D6EA3B /* BaseViewController.swift in Sources */,
 				A7BB86DC1BDE8BDA0006B421 /* UserLocation.swift in Sources */,
 				A7643A2B1BE004590058EC6B /* MockService.swift in Sources */,
 				A7B368751BE0549D0037BC75 /* SessionManager.swift in Sources */,
@@ -416,6 +423,7 @@
 				A7727C611BE082BF00B839E3 /* UserlocationTableViewCell.swift in Sources */,
 				A70FB2B81BDD8BE100CEF40F /* AppDelegate.swift in Sources */,
 				A7643A2D1BE006E10058EC6B /* ContactViewController.swift in Sources */,
+				A781F8991BE33AD700D6EA3B /* SEENavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

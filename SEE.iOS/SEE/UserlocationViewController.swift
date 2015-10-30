@@ -8,13 +8,14 @@
 
 import UIKit
 
-class UserlocationViewController: UIViewController,UITableViewDataSource {
+class UserlocationViewController: BaseViewController,UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var userlocationTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.userlocationTableView.dataSource = self
+        self.userlocationTableView.delegate = self;
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,5 +50,9 @@ class UserlocationViewController: UIViewController,UITableViewDataSource {
         cell!.updateLabels(item)
         
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
+        return 60;
     }
 }

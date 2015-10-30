@@ -5,25 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SEE" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-99" y="-439"/>
-        </scene>
         <!--Userlocation View Controller-->
         <scene sceneID="9Jd-Gz-Ry2">
             <objects>
@@ -40,6 +21,7 @@
                                 <rect key="frame" x="-3" y="52" width="606" height="499"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userlocationTableViewCell" id="G5N-xK-ijn" customClass="UserlocationTableViewCell" customModule="SEE" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="606" height="44"/>
@@ -48,7 +30,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="606" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-sl-Hw4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-sl-Hw4">
                                                     <rect key="frame" x="15" y="22" width="272" height="21"/>
                                                     <animations/>
                                                     <constraints>
@@ -65,7 +47,7 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-UT-qGd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-UT-qGd">
                                                     <rect key="frame" x="15" y="0.0" width="275" height="21"/>
                                                     <animations/>
                                                     <constraints>
@@ -94,6 +76,7 @@
                                             <constraints>
                                                 <constraint firstItem="FZa-sl-Hw4" firstAttribute="top" secondItem="9Vu-UT-qGd" secondAttribute="bottom" constant="1" id="1BS-9g-whi"/>
                                                 <constraint firstItem="45A-RT-7nh" firstAttribute="leading" secondItem="9Vu-UT-qGd" secondAttribute="trailing" constant="5" id="2vF-oA-0GU"/>
+                                                <constraint firstItem="9Vu-UT-qGd" firstAttribute="top" secondItem="41S-lF-Hhs" secondAttribute="topMargin" constant="-3" id="33C-Kx-hKD"/>
                                                 <constraint firstItem="45A-RT-7nh" firstAttribute="leading" secondItem="FZa-sl-Hw4" secondAttribute="trailing" constant="8" id="7ZZ-2u-5Js"/>
                                                 <constraint firstItem="9Vu-UT-qGd" firstAttribute="leading" secondItem="41S-lF-Hhs" secondAttribute="leadingMargin" constant="7" id="8Sh-pi-37j"/>
                                                 <constraint firstItem="45A-RT-7nh" firstAttribute="centerY" secondItem="41S-lF-Hhs" secondAttribute="centerY" id="AKq-pp-6XG"/>
@@ -112,6 +95,7 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="TUh-xw-ZAW"/>
                                                     <exclude reference="1BS-9g-whi"/>
                                                     <exclude reference="S2A-mE-g3M"/>
                                                     <exclude reference="Xqk-sh-40e"/>
@@ -211,6 +195,7 @@
         <scene sceneID="10k-O4-O8s">
             <objects>
                 <tabBarController id="Yw3-an-sSb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZyL-gE-pJj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="R9s-3g-vul">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
