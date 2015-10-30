@@ -65,7 +65,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
                 
                 var locationString = "Unknown location"
                 if(formatedString == "43384:51080"){
-                    locationString = "My Office"
+                    locationString = "Stop Freakin! Call Beacon!"
+                }else if(formatedString == "45777:8263"){
+                    locationString = "Kevin Beacon's Beacon"
                 }
                 
 
