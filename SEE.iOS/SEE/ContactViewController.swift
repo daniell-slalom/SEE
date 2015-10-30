@@ -40,11 +40,12 @@ class ContactViewController: BaseViewController,UITextFieldDelegate{
         self.GreetingLabelView!.text = "Hello " + SessionManager.instance.username! + "!"
         
         self.trackingSwitch.setOn(false, animated: true)
+        SessionManager.instance.shouldTrack = false;
     }
     
     @IBAction func trackSwitchChanged(sender: AnyObject) {
         
-        if(trackingSwitch.on && self.usernameTextField.text == ""){
+        if(self.usernameTextField.text == ""){
             trackingSwitch.setOn(false, animated: true)
         }
         
